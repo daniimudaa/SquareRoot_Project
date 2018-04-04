@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 926d327e8bb65cb45933001fd7f87ec5
+timeCreated: 1522750005
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: be_head_spine
+    100002: bind_be_pelvis
+    100004: bind_chest
+    100006: bind_head
+    100008: bind_L_be_clavicle
+    100010: bind_L_clavicle
+    100012: bind_L_foot
+    100014: bind_L_hand
+    100016: bind_L_shoulder
+    100018: bind_L_thigh
+    100020: bind_neck
+    100022: Bind_pelvis
+    100024: bind_R_be_clavicle (2)
+    100026: bind_R_clavicle (2)
+    100028: bind_R_hand (2)
+    100030: bind_R_shoulder (2)
+    100032: bind_R_thigh (2)
+    100034: bind_RL_foot (2)
+    100036: Bind_root
+    100038: Camera
+    100040: Directional Light
+    100042: Drive_L_hand
+    100044: Drive_LFoot_LOC
+    100046: Drive_R_hand
+    100048: Drive_TOPHEAD_LOC
+    100050: DriveNeck_LOC
+    100052: DriveR_foot_LOC
+    100054: DrivPelvis_LOC
+    100056: eyes (2)
+    100058: floor
+    100060: GLOBAL_CONTROL
+    100062: head_spine_mid
+    100064: L_FOOT (2)
+    100066: L_HAND
+    100068: LOWRES (2)
+    100070: NECK
+    100072: PELVIS (cog)
+    100074: R_FOOT
+    100076: R_HAND
+    100078: Texture Group
+    100080: TOP_HEAD
+    100082: //RootNode
+    100084: veggie_geo
+    400000: be_head_spine
+    400002: bind_be_pelvis
+    400004: bind_chest
+    400006: bind_head
+    400008: bind_L_be_clavicle
+    400010: bind_L_clavicle
+    400012: bind_L_foot
+    400014: bind_L_hand
+    400016: bind_L_shoulder
+    400018: bind_L_thigh
+    400020: bind_neck
+    400022: Bind_pelvis
+    400024: bind_R_be_clavicle (2)
+    400026: bind_R_clavicle (2)
+    400028: bind_R_hand (2)
+    400030: bind_R_shoulder (2)
+    400032: bind_R_thigh (2)
+    400034: bind_RL_foot (2)
+    400036: Bind_root
+    400038: Camera
+    400040: Directional Light
+    400042: Drive_L_hand
+    400044: Drive_LFoot_LOC
+    400046: Drive_R_hand
+    400048: Drive_TOPHEAD_LOC
+    400050: DriveNeck_LOC
+    400052: DriveR_foot_LOC
+    400054: DrivPelvis_LOC
+    400056: eyes (2)
+    400058: floor
+    400060: GLOBAL_CONTROL
+    400062: head_spine_mid
+    400064: L_FOOT (2)
+    400066: L_HAND
+    400068: LOWRES (2)
+    400070: NECK
+    400072: PELVIS (cog)
+    400074: R_FOOT
+    400076: R_HAND
+    400078: Texture Group
+    400080: TOP_HEAD
+    400082: //RootNode
+    400084: veggie_geo
+    2000000: Camera
+    2100000: floor
+    2100002: Veggie_Model
+    2300000: floor
+    3300000: floor
+    4300000: floor
+    4300002: LOWRES (2)
+    4300004: eyes (2)
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Directional Light
+    13700000: eyes (2)
+    13700002: LOWRES (2)
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
