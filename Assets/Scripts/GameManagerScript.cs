@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameManagerScript : MonoBehaviour 
 {
-	public Text[] numbersText = new Text [1];
+	public Text[] numbersText = new Text [2];
 	public int[] numbers = new int[1];
 
 	public float time;
@@ -43,28 +43,28 @@ public class GameManagerScript : MonoBehaviour
 	{
 		for (int i = 0; i < numbers.Length; i++) 
 		{
-			numbers [i] = Random.Range (0, 10);
-			numbersText [i].text = numbers [i].ToString ();
+			numbers [i] = Random.Range (1, 9);
+			numbersText [i].GetComponent<Text>().text = numbers [i].ToString ();
 		}
 
-		if (p.Level < 40f) {
-			Timer = roundLength;
-		} 
-
-		else 
-		{
-			Timer = 10f;
-		}
-
-		result = numbers [0] + numbers [1];
-		Debug.Log (result);
+//		if (p.Level < 40f) {
+//			Timer = roundLength;
+//		} 
+//
+//		else 
+//		{
+//			Timer = 10f;
+//		}
+//
+//		result = numbers [0] + numbers [1];
+//		Debug.Log (result);
 	}
 
 	void displayResults()
 	{
 		for (int i = 0; i < buttons.Length; i++) 
 		{
-			buttons [i].gameObject.GetComponent<Text> ().text = Answer.ToString();
+			buttons [i].gameObject.GetComponentInChildren<Text> ().text = Answer.ToString();
 		}
 	}
 }
