@@ -10,13 +10,13 @@ public class GameManagerScript : MonoBehaviour
 
 	//number values
 	public int[] numbers = new int[1];
-
-	public Button [] buttons;
 	public int Answer;
 	public bool correct;
 
 	//number amount leaves collected
 	public int amnCollected;
+
+	public Text[] amnCollectedText;
 
 
 	void Start () 
@@ -24,9 +24,10 @@ public class GameManagerScript : MonoBehaviour
 		//setting the first values for all UI text
 		randomNums(); //ransomising the numbers
 		Answer = numbers [0] + numbers [1]; //calulating the answer
-		displayResults (); //displaying collected result
 		amnCollected = 0;
 		correct = false;
+		amnCollectedText[0].text = "0";
+		amnCollectedText[1].text = "0";
 	}
 	
 	void Update () 
@@ -34,11 +35,13 @@ public class GameManagerScript : MonoBehaviour
 		//if answer is correct then next random math problem
 		if (correct)
 		{
-			//play "correct" sound
+			//play "thats correct" sound
 			randomNums();
 			Answer = numbers [0] + numbers [1];
-			displayResults ();
 			correct = false;
+			amnCollected = 0;
+			amnCollectedText[0].text = "0";
+			amnCollectedText[1].text = "0";
 		}
 
 		//if the value of collected is the same as answer then correct is true
@@ -60,13 +63,10 @@ public class GameManagerScript : MonoBehaviour
 		}
 	}
 
-	//display current collected amount
-	void displayResults()
+	//updating UI text to current collected amount
+	public void updateCollected()
 	{
-		for (int i = 0; i < buttons.Length; i++) 
-		{
-			//this is showing the Answer atm, need to change this to be the collected amount on display in UI text instead of button
-			buttons [i].transform.GetChild(0).GetComponent<Text> ().text = Answer.ToString();
-		}
+		amnCollectedText[0].text = amnCollected.ToString();
+		amnCollectedText[1].text = amnCollected.ToString();
 	}
 }

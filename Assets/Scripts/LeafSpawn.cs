@@ -4,25 +4,37 @@ using UnityEngine;
 
 public class LeafSpawn : MonoBehaviour 
 {
-	public GameObject leaves;
-	public int numToSpawn;
-	public Vector3 position; 
+	//array of leaves prefabs
+	public GameObject[] leaves;
 
-	void Awake ()
-	{
-		//Vector3 position = new Vector3 (Random.Range (100.0f, 1000.0f), 70, Random.Range (100.0f, 1000.0f, 0f));
-	}
+	//number of leaves waned to spawn in scene
+	public int numToSpawn;
+
+	//position for leaves to spawn
+	public Vector3 position;
+
+	//int value to determin a random pick of leaf prefabs
+	private int random;
 
 	void Start () 
 	{
+		//calling from start & having the function seperated so that it is able to be called via other scripts
+		spawnLeaves ();
+	}
+
+	public void spawnLeaves()
+	{
+		//creating new int to store value - amount of objects that have spawned
 		int spawned = 0;
 
+		//if the spawned amount is less that the number to spawn then spawn leaf objects in random transforms within a set range
 		while (spawned < numToSpawn) 
 		{
+			random = Random.Range (0, 3);
 			position = new Vector3 (Random.Range (20.0f, -20.0f), 10, Random.Range (20.0f, -20.0f));
-			Instantiate (leaves, position, Quaternion.identity);
+			Instantiate (leaves[random], position, Quaternion.identity);
 			spawned++;
 		}
 	}
-	
+
 }
