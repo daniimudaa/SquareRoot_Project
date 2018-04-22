@@ -16,16 +16,20 @@ public class GameManagerScript : MonoBehaviour
 	//number amount leaves collected
 	public int amnCollected;
 
+	//amount collected text reference
 	public Text[] amnCollectedText;
 
+	//audio source
+	public AudioClip correctSound;
+	public AudioSource audioSource;
 
 	void Start () 
 	{
 		//setting the first values for all UI text
+		correct = false;
 		randomNums(); //ransomising the numbers
 		Answer = numbers [0] + numbers [1]; //calulating the answer
 		amnCollected = 0;
-		correct = false;
 		amnCollectedText[0].text = "0";
 		amnCollectedText[1].text = "0";
 	}
@@ -35,7 +39,8 @@ public class GameManagerScript : MonoBehaviour
 		//if answer is correct then next random math problem
 		if (correct)
 		{
-			//play "thats correct" sound
+			//play "correct" sound
+			audioSource.PlayOneShot(correctSound);
 			randomNums();
 			Answer = numbers [0] + numbers [1];
 			correct = false;
